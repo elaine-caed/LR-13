@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+void MyFunc1(void)
+{
+// тіло функції - вивід тексту
+cout <<"MyFunc1() is called";
+return; // повернення з функції
+}
+void main ()
+{
+    MyFunc1();
+}
