@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+float MyAbs(float x) // x - формальний параметр
+{
+if (x < 0) return (float)(-x);
+else return x;
+}
+void main ()
+{
+    float res, a;
+    a = -18.25;
+    res = MyAbs(a); // res = 18.25; змінна a - фактичний параметр
+    res = MyAbs(-23); // res = 23; константа -23 - фактичний параметр
+    cout << res; 
+}
