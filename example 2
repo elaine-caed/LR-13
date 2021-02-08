@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+void MyFuncMult2(int x)
+{
+    int res; // внутрішня змінна
+    res = x * 2; // обчислення результату
+    cout << res; // вивід результату
+    return;
+}
+void main ()
+{
+    MyFuncMult2(42); // буде виведено 84
+    MyFuncMult2(-8); // -16
+}
