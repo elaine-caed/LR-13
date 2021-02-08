@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int x, m, ave, A[20];
+int rand(float x)
+{
+ return x=rand()%41-20;
+}
+int average(float m)
+{
+    int count = 0;
+    for(int j = 0; j < 20; j++)
+    {
+        if(A[j] % 2 != 0 && A[j] > 0)
+        {
+            m += A[j];
+            count++;
+        }
+    }
+    return m /= count;
+}
+int main()
+{
+    for(int i=0; i<20; i++)
+    {
+        A[i]=rand(x);
+        cout<<A[i]<<" ";
+    }
+    ave= average(m);
+    cout<<endl;
+    cout<< "Average = "<<ave<<endl;
+}
