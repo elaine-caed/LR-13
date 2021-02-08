@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+#pragma hdrstop
+int multiply(int, int) ; //прототип функції multiply()
+void showResult(int); //прототип функції showResult()
+int main(int argc, char** argv)
+{
+    int x, y, result;
+    cout << endl << "Enter the first value: ";
+    cin >> x;
+    cout << "Enter the second value: ";
+    cin >> y;
+    result = multiply(x, y) ; //виклик функції multiply()
+    showResult(result) ; //виклик функції showResult()
+    cout << endl << endl << "Press any key to continue...";
+    return 0;
+}
+/*визначення функції multiply()*/
+int multiply(int x, int y)
+{ 
+    return x * y; 
+}
+/*визначення функції showResult()*/
+void showResult(int res)
+{ 
+    cout << "The result is: " << res << endl; 
+}
